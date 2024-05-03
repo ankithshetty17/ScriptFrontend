@@ -64,6 +64,7 @@ void _handleButtonPressed(int index){
         bordercolor[index] = Colors.white;
         // Set selected index for navigation
         _selectedIndex = index;
+        
       }
     });
   }
@@ -76,7 +77,6 @@ void _handleButtonPressed(int index){
           backgroundColor: Colors.white.withOpacity(0),
           elevation: 0,
           centerTitle: true,
-         
                title:  Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -141,8 +141,7 @@ void _handleButtonPressed(int index){
                       ),
                     ),
                   ],
-                ),
-              
+                ), 
         ),
         body: _widgetOptions.elementAt(_selectedIndex),
       ),
